@@ -1,6 +1,18 @@
-Kreirati novi Java projekt koji će sadržavati perzistentnu klasu „Product” s varijablama „id” (Long), „name” (String) i „price” (BigDecimal) te odgovarajuću konfiguraciju u datoteci „hibernate.cfg.xml”.
-Kreirati novu klasu s „main” metodom koja će učitavati konfiguraciju te pozivati metode „addProduct”, „updateProduct” i „deleteProduct”, ali uz korištenje Hibernate sesije i transakcija.
-Svaka metoda mora na početku pokrenuti transakciju, obaviti operaciju s bazom podataka (spremanje, ažuriranje ili brisanje), obaviti „commit” ili „rollback” (u slučaju pogreške) te zatvoriti Hibernate sesiju.
+Kreirati novi Java projekt koji će sadržavati perzistentnu klasu „Product” s varijablama:
+ * „id” (Long),
+ * „name” (String) i
+ * „price” (BigDecimal)
+ * te odgovarajuću konfiguraciju u datoteci „hibernate.cfg.xml”.
+Kreirati novu klasu s „main” metodom koja će učitavati konfiguraciju te pozivati metode:
+ * „addProduct”,
+ * „updateProduct” i
+ * „deleteProduct”,
+ * ali uz korištenje Hibernate sesije i transakcija.
+
+Svaka metoda mora na početku:
+* pokrenuti transakciju,
+* obaviti operaciju s bazom podataka (spremanje, ažuriranje ili brisanje),
+* obaviti „commit” ili „rollback” (u slučaju pogreške) te zatvoriti Hibernate sesiju.
 
 Primjer implementacije metode "addProduct" može izgledati ovako:
 
